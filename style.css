@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a12;
+    color: #e0e0ff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#game-container {
+    position: relative;
+    border: 3px solid #4a4a8a;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(100, 100, 255, 0.3);
+    overflow: hidden;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: #88aaff;
+    z-index: 10;
+}
+
+#info-panel {
+    max-width: 800px;
+    margin-top: 20px;
+    background: #12122a;
+    padding: 16px 24px;
+    border-radius: 10px;
+    border: 1px solid #333366;
+}
+
+#info-panel h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ff6b35, #4fc3f7, #81c784);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#info-panel ul {
+    list-style: none;
+    margin: 8px 0 12px 0;
+}
+
+#info-panel li {
+    margin: 4px 0;
+}
+
+kbd {
+    background: #2a2a4a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+#mission-text {
+    color: #ffcc66;
+    font-weight: 600;
+    margin-top: 8px;
+}
